@@ -14,7 +14,7 @@ Please check out the following before proceeding:
 
 Under your “config” folder, under “rpdl”, you’ll see two files, open **pack.json**. 
 
-Inside **pack.json**, you’ll see "urlPaths" (for your URLs), "folder" (whether your URLs lead to a folder or not), and “frequency”, which we’ll talk about later.
+Inside **pack.json**, you’ll see "urlPaths" (for your URLs), "folder" (whether your URLs lead to a folder or not), “frequency”, and "hashcheck".
 
 For example:
 
@@ -23,7 +23,8 @@ For example:
 {
     "urlPaths": ["https://modrinth.com/", "https://modrinth.com/mod/resource-pack-downloader/"],
     "folder": true,
-    "frequency":60
+    "frequency":60,
+    "hashcheck": false
 }
 ```
 
@@ -34,6 +35,10 @@ For example:
 Now, the **“frequency”** is how often you’d like the mod to re-download the resource packs in pack.json. The default value is “60”, meaning 60 minutes. 
 
 ***An example of how the frequency works is, let’s say you put 60 minutes. When you first launch the game, the resource packs would be downloaded nonetheless, then, after 60 minutes if you launch the game again, it will download the resource packs again.***
+
+**"hashcheck"**, if true, will dismiss the values of "folder" & "frequency", and will assume the link leads to a Dropbox folder/any .zip file which would be a resource pack. Every time Minecraft is launched, it downloads the resource pack and checks if anything has changed by comparing their hashes.
+
+As features expand, a wiki will come soon. For now, this should do.
 </details>
 
 <details>
