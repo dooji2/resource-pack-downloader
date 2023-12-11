@@ -1,4 +1,4 @@
-# Resource Downloader (previously resource pack downloader)
+# Resource Downloader
 ### A complex Fabric Minecraft Mod to download a mod/resource pack (or more) from a URL(or multiple URLs)!
 #
 
@@ -22,11 +22,15 @@ For example:
 ```
 {
     "urlPaths": ["https://modrinth.com/", "https://modrinth.com/mod/resource-downloader/"],
+    "redownloadrp": false,
+    "enableResourcePacks": false,
     "folder": true,
     "frequency":60,
     "hashcheck": false,
     "modURLs": ["https://modrinth.com/mod/resource-downloader/"],
-    "redownloadmods": false
+    "redownloadmods": false,
+    "remoteconf":[" "],
+    "version": 1
 }
 ```
 
@@ -44,7 +48,7 @@ Now, the **“frequency”** is how often you’d like the mod to re-download th
 
 **"redownloadmods"** is false by default. It determines whether mods should be downloaded the next time the game is launched. If true, on the next launch, it will redownload all of the mods from "modURLs", and will set itself to false again afterwards.
 
-A wiki will be made soon.
+A wiki will be made soon to document other features.
 </details>
 
 <details>
