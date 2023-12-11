@@ -1,4 +1,4 @@
-# Resource Downloader
+# Resource Downloader (previously Resource Pack Downloader)
 ### A complex Fabric Minecraft Mod to download a mod/resource pack (or more) from a URL(or multiple URLs)!
 #
 
